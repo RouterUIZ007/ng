@@ -1,0 +1,30 @@
+<p class="class1"></p>
+<h1 class="text-3xl font-bold underline">
+    Hero
+</h1>
+
+<dl>
+    <th>Nombre:</th>
+    <dd>{{name}}</dd>
+    <th>Edad</th>
+    <dd>{{age}}</dd>
+    <th>Metodo:</th>
+    <dd>{{getHeroDescription()}}</dd>
+    <th>Capitalizado:</th>
+    <dd>{{capitalizaName}}</dd>
+</dl>
+<button 
+*ngIf=" name !== 'Spider Man'"
+(click)="changeName()" 
+class="m-8 p-2 rounded-full border-2 border-rose-500">
+    Cambiar nombre
+</button>
+<button 
+*ngIf=" age !== 24"
+(click)="changeAge()" class="m-8 p-2 rounded-full border-2 border-rose-500">
+    Cambiar edad
+</button>
+
+<button (click)="resetInfo()" class="m-8 p-2 rounded-full border-2 border-rose-500">
+    Regresar Info
+</button>
