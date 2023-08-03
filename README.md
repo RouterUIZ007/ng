@@ -1,4 +1,23 @@
-# 02Bases
+# Aprendiendo conceptos de arngular 
+
+Crear proyectos de Angular
+
+Explicar cada archivo y directorio de un proyecto
+
+Componentes
+
+Módulos
+
+One way data binding
+
+Uso del AngularCLI - Angular Command Line Interface
+
+Directivas creadas por Angular
+
+ngIf y ngIf-else
+
+Y más...
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
