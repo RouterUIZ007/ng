@@ -1,0 +1,19 @@
+<div class="bg-black">
+
+    <h1 class="m-2 p-2 text-lime-50">DBz Character</h1>
+</div>
+
+<div class="row">
+    <div class="col">
+
+        <dbz-list [characterList]="character"
+                (onDelete)="onDeleteCharacter($event)"
+        ></dbz-list>
+
+    </div>
+    <div class="col">
+
+        <dbz-add-character (onNewCharacter)="onNewCharacter($event)" onDeleteCharacter=""></dbz-add-character>
+
+    </div>
+</div>

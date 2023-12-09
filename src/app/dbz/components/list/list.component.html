@@ -1,0 +1,17 @@
+<ul>
+    <li *ngFor="let character of characterList; let i = index;
+     let isFirst = first
+     let isLast = last
+     let isEven = even
+     let isOdd = odd" class="bg-black text-white" [ngClass]="{
+        'bg-indigo-500': isFirst,
+        'bg-purple-700': isLast,
+            'text-white': true
+        }">
+        <div>
+            {{i+1}} {{character.name}} - {{character.power}}
+            <!-- F: {{isFirst}} L: {{isLast}} P: {{isEven}} I: {{isOdd}} -->
+        </div>
+        <button class="bg-red-600 text-white m-1 p-1" (click)="onDeleteCharacter(character.id)">X</button>
+    </li>
+</ul>
